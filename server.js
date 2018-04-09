@@ -32,6 +32,6 @@ app.post('/', function (req, res) {
     })
 });
 
-app.listen(3010, function () {
-  console.log('Example app listening on port 3010!')
+app.listen(process.env.PORT || 3000, function() {
+  console.log('listening on', http.address().port);
 });
