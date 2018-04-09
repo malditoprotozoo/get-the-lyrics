@@ -1,0 +1,14 @@
+<fieldset>
+  <form action="/" method="post" class="form-group">
+    <div class="inputs-container container"><input name="song" class="form-control" type="text" class="ghost-input" placeholder="Enter a Song Title" required>
+    <input name="artist" class="form-control" type="text" class="ghost-input" placeholder="Enter Artist's Name" required>
+    <input class="btn btn-submit" type="submit" class="ghost-button" value="Get Lyrics"></div>
+    <% if (lyrics !== null) { %>
+      <h2 class="song-info"><%= artist %> - <%= song %></h2>
+      <p><%- lyrics %></p>
+    <% } %>
+    <% if (error !== null) { %>
+      <p><%= error %></p>
+    <% } %>
+  </form>
+</fieldset>

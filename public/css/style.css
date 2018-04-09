@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Codystar:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+*::-webkit-scrollbar-thumb {
+  background-color: #D11E48;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  background: #FDE6BD;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'PT Sans', cursive;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header nav.navbar {
+  justify-content: center;
+  font-family: 'Codystar', sans-serif;
+}
+
+nav.navbar a.navbar-brand {
+  color: #D11E48;
+  font-size: 3em;
+  text-shadow: 2px 2px 6px;
+  text-transform: uppercase;
+  animation: flicker 3s linear infinite;
+}
+
+form.form-group {
+  text-align: center;
+}
+
+.inputs-container {
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form.form-group .inputs-container input {
+  max-width: 500px;
+}
+
+h2.song-info {
+  text-transform: capitalize;
+}
+
+.btn-submit {
+  background-color: #D11E48;
+  color: white;
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+footer.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+/*
+* Flickering effect from https://codepen.io/mandymichael/pen/aJLYVz
+*/
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
