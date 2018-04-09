@@ -1,12 +1,20 @@
 {
   "name": "get-the-lyrics",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web App to search lyrics, made with Node.js",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Victoria Tori Rodríguez <virodriguez.fe@gmail.com>",
+  "author": {
+    "name": "Victoria Tori Rodríguez",
+    "email": "virodriguez.fe@gmail.com",
+    "url": "https://malditoprotozoo.github.io/portfolio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malditoprotozoo/get-the-lyrics"
+  },
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
