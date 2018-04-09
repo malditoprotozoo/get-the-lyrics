@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const fetch = require('node-fetch');
 const app = express();
+const port = process.env.PORT || 8080;
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -32,6 +33,6 @@ app.post('/', function (req, res) {
     })
 });
 
-app.listen(process.env.PORT || 3000, function() {
-  console.log('listening on', http.address().port);
+app.listen(port, function() {
+  console.log('Our app is running on http://localhost:' + port);
 });
